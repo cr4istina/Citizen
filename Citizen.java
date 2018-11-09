@@ -28,7 +28,13 @@ public class Citizen {
     public int getAge(){ return age; }
 
     public void setNationality(String nationality){
-        if (nationality.equals("MD") && nationality.equals("Moldova") && nationality.equals("moldova") && nationality.equals("md")){
+        if (nationality.equals("MD")){
+            System.out.println("You're allowed to vote.");
+        } else if (nationality.equals("Moldova")){
+            System.out.println("You're allowed to vote.");
+        } else if (nationality.equals("moldova")){
+            System.out.println("You're allowed to vote.");
+        } else if (nationality.equals("md")){
             System.out.println("You're allowed to vote.");
         } else {
             System.out.println("You're not allowed to vote.");
